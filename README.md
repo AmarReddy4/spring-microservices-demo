@@ -91,7 +91,3 @@ Order Service <--[InventoryResponse]-- Kafka <-+
 ```
 
 The Order Service creates an order with `PENDING` status and publishes an event. The Inventory Service checks availability and responds. The Order Service then updates the status to `CONFIRMED` or `REJECTED`.
-
-## License
-
-MIT
